@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@humay/types": "workspace:^",
+    "@humay/utils": "workspace:^",
     "@radix-ui/react-slot": "^1.1.2",
     "@tailwindcss/vite": "^4.1.3",
     "class-variance-authority": "^0.7.1",
