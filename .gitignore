@@ -1,35 +1,59 @@
+# OS-specific files
 .DS_Store
 Thumbs.db
 
-.vscode/
-.idea/
-*.swp
+# IDEs and Editors
+.vscode/ 
+.idea/    
+*.swp      
 
+# Vite and Node.js specific
+.vite/      
 node_modules/
 npm-debug.log
 yarn-debug.log
-yarn-error.log
+yarn-error.log 
 
-dist/
-build/
-target/
+# Build outputs
+dist/           
+build/           
+target/           
+flutter/.pub-cache/ 
 
-*.log
-*.tmp
+# TypeScript build and caching
+*.tsbuildinfo     
 
-.env
-.env.local
-.env.*.local
+# Log files and temporary files
+*.log           
+*.tmp          
 
+# Environment files (do not commit sensitive info)
+.env          
+.env.local   
+.env.*.local 
+
+# Dependency locks (if you prefer using one over the other, choose accordingly)
 package-lock.json
-yarn.lock
+yarn.lock        
 
-/ios/Pods/
+# Expo/React Native (Android and iOS related)
+/ios/Pods/      
 /android/.gradle/
-/android/build/
-flutter/.pub-cache/
+/android/build/  
 
-__pycache__/
-*.pyc
-*.pyo
-*.class
+# Gradle files (commonly used in React Native and Android projects)
+*.gradle        
+*.lock         
+
+# Watchman
+.watchmanconfig
+
+# Python
+__pycache__/   
+*.pyc          
+*.pyo          
+*.class        
+
+# Miscellaneous
+*.bak         
+*.orig       
