@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from core import config
 from core.db import database, reset_database
 from routers.user import router as user_router
+from utils import logger
 
 app = FastAPI()
 app.include_router(user_router, prefix="/users", tags=["users"])
