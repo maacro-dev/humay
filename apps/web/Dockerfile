@@ -1,14 +1,19 @@
-FROM node:18-alpine AS development
+FROM node:23-alpine AS development
 
 RUN npm install -g pnpm
+RUN corepack enable
 
 WORKDIR /app
 
-COPY apps/web/package.json apps/web/pnpm-lock.yaml ./
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
+
+COPY apps/web ./apps/web
+
+COPY packages ./packages
 
 RUN pnpm install --frozen-lockfile
 
-COPY apps/web .
+WORKDIR /app/apps/web
 
 EXPOSE 5173
 

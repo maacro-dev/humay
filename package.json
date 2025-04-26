@@ -1,7 +1,5 @@
 {
-  "private": true,
-  "workspaces": [
-    "packages/*",
-    "apps/*"
-  ]
+  "name": "humay",
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.9.0"
 }
